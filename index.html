@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>CRM Dashboard</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h1>CRM Lead Dashboard</h1>
+
+<input type="text" id="search" placeholder="Search leads..." onkeyup="searchLeads()">
+
+<form id="leadForm">
+
+<input type="text" id="name" placeholder="Client Name" required>
+<input type="email" id="email" placeholder="Email" required>
+
+<select id="status">
+<option>New</option>
+<option>Contacted</option>
+<option>Converted</option>
+</select>
+
+<button type="submit">Add Lead</button>
+
+</form>
+
+<table>
+
+<thead>
+<tr>
+<th>Name</th>
+<th>Email</th>
+<th>Status</th>
+<th>Actions</th>
+</tr>
+</thead>
+
+<tbody id="leadTable"></tbody>
+
+</table>
+
+<script src="script.js"></script>
+
+</body>
+</html>
